@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+
+body{
+    color: white;
+    font-size: "Roboto", san-serif;
+}
+
+h1{
+    color: #4181ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    background-color: antiquewhite;
+    max-width:300px;
+    min-height: 250px;
+    padding:20px;
+    margin: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 10px 5px 5px rgb(140, 140, 140);
+    transition: all 0.3s ease-in;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card:nth-child(2){
+    background-color: blueviolet;
+}
+
+.card:last-child{
+    background-color: aquamarine;
+}
+
+
+.imgSpace img{
+    width:100%;
+}
+
+.incardContainer{
+    display:flex;
+
+}
+.incardContainer p{
+    flex-grow: 2;
+    margin: 0 0;
+}
+.incardContainer input[type='button']{
+    flex-grow: 1;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgb(83, 83, 83);
+    color: white;
+}

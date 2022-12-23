@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const pilots = [
+        {
+          id: 10,
+          name: "Poe Dameron",
+          years: 14,
+        },
+        {
+          id: 2,
+          name: "Temmin 'Snap' Wexley",
+          years: 30,
+        },
+        {
+          id: 41,
+          name: "Tallissan Lintra",
+          years: 16,
+        },
+        {
+          id: 99,
+          name: "Ello Asty",
+          years: 22,
+        },
+      ];
+      //output  1.totalYears of pilots
+      //2. find which pilot is the most experienced one
+      //total= initialValue or previously return value 0
+      // 1.14+0 = 14
+      // 2. 14+30 =44
+      // 3. 44 +16 = 60
+      // 4. 60 + 22 = 82
+      const totalYears = pilots.reduce((acc, pilot) => acc + pilot.years, 0);
+
+      const mostExpPilot = pilots.reduce(function (oldest, pilot) {
+        return (oldest.years || 0) > pilot.years ? oldest : pilot;
+      }, {});
+    </script>
+  </head>
+  <body></body>
+</html>
